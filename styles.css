@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Display screen styling */
+#firstTextArea {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 2rem;
+    color: #3399ff;
+    background-color: #666;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+#secondTextArea {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 2rem;
+    color: #3399ff;
+    background-color: #666;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+/* Buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styling */
+.button {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #6a0dad;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Styling for the "AC" button */
+.button.clear {
+    background-color: #ff3333;
+}
+
+/* Operator buttons */
+.button.operation {
+    background-color: #6a0dad;
+}
+
+/* Answer button */
+.button.answer {
+    font-size: 1rem;
+}
